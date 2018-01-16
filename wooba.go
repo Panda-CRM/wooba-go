@@ -3,12 +3,12 @@ package wooba
 import (
 	"bytes"
 	"encoding/xml"
-	. "github.com/Panda-CRM/panda-api/helpers"
+	"errors"
+	. "github.com/Panda-CRM/helpers-go"
+	. "github.com/Panda-CRM/wooba-go/models"
 	"golang.org/x/net/html/charset"
 	"net/http"
 	"time"
-	."github.com/Panda-CRM/panda-api/integrations/sales/wooba/models"
-	"errors"
 )
 
 const (

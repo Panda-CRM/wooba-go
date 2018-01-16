@@ -160,10 +160,10 @@ type TaxaDeServico struct {
 
 type VendasErros struct {
 	XMLName xml.Name `xml:"Vendas"`
-	Erros []Erro `xml:"Erros"`
+	Erros   []Erro   `xml:"Erros"`
 }
 
 type Erro struct {
 	XMLName xml.Name `xml:"Erros"`
-	Erro string `xml:"Erro"`
+	Erro    string   `xml:"Erro"`
 }

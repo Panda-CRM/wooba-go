@@ -1,7 +1,7 @@
 package wooba
 
 import (
-	"github.com/Panda-CRM/helpers-go"
+	. "github.com/Panda-CRM/helpers-go"
 	"log"
 	"os"
 	"testing"
@@ -55,7 +55,7 @@ func TestWooba_VendasString(t *testing.T) {
 	}
 	date, _ := time.Parse(DATE_TEST_FORMAT, WOOBA_DATE_TEST)
 	_, err := wooba.VendasString(date, date)
-	helpers.Ok(t, err)
+	Ok(t, err)
 }
 
 func TestWooba_CredencialInvalida(t *testing.T) {
@@ -66,5 +66,5 @@ func TestWooba_CredencialInvalida(t *testing.T) {
 	}
 	date, _ := time.Parse(DATE_TEST_FORMAT, WOOBA_DATE_TEST)
 	_, err := wooba.VendasString(date, date)
-	helpers.NotOk(t, err)
+	NotOk(t, err)
 }
